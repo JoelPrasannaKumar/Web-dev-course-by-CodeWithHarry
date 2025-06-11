@@ -1,0 +1,15 @@
+{
+  "name": "joel",
+  "version": "0.0.1",
+  "description": "my file",
+  "main": "mypromise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "something",
+    "anything"
+  ],
+  "author": "joel",
+  "license": "ISC"
+}

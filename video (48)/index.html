@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-8</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 1000px;
+            height: 550px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 70px;
+            animation: animation1 5s cubic-bezier(0.19, 0.02, 0, 1.46) 23s infinite forwards,
+            animation2 5s ease 23s infinite forwards;
+        }
+        @keyframes animation1 {
+            from{
+                
+            }
+            to{
+                transform: translateY(910px);
+            }
+        }
+        @keyframes animation2 {
+            from{
+               
+            }
+            to{
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

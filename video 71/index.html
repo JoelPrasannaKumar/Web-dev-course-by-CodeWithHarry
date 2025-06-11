@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cntr">
+        <div class="box" style="display: flex; " data-createdby="Joel" data-conceptby="Rohan">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            let div=document.createElement("div")
+            div.innerHTML="I have been inserted through javascript"
+            document.body.appendChild(div)
+            document.querySelector(".cntr").before(div)
+            div.setAttribute("class","created")
+            let cont=document.body.querySelector(".cntr")
+            cont.insertAdjacentHTML("beforebegin","<b> I am under the water. Please help me here too much raining.... iuuuuooooo</b>")
+
+        </script>
+    </div>
+</body>
+
+</html>
