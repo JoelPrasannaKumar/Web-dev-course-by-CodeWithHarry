@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .child{
+        background-color: aliceblue;
+        border: 2px solid black;
+        padding: 14px;
+        margin: 14px;
+        cursor: pointer;
+    }
+    .childcntr{
+        background-color: beige;
+        padding: 14px;
+        margin: 14px;
+        cursor: pointer;
+    }
+    .cntr{
+        background-color: yellow;
+        padding: 14px;
+        margin: 14px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="cntr">
+    <section class="childcntr">
+        <div class="child">Iam a Child</div>
+    </section>
+</div>
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("child got clicked")
+        })
+        document.querySelector(".childcntr").addEventListener("click",()=>{
+            alert("childctnr got clicked")
+        })
+        document.querySelector(".cntr").addEventListener("click",()=>{
+            alert("ctnr got clicked")
+        })
+        function getRandomColor(){
+        let a=Math.floor(Math.random()*256)
+        let b=Math.floor(Math.random()*256)
+        let c=Math.floor(Math.random()*256)
+        let o=Math.random()
+        return `rgba(${a},${b},${c},${o})`;
+}
+let a=setInterval(()=>{
+    document.querySelector(".child").style.background=getRandomColor();
+},1000)
+// let b=setTimeout(()=>{
+//     document.querySelector(".child").style.background=getRandomColor()
+// },5000)
+
+    </script>
+</body>
+</html>

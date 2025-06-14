@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilty.css">
+</head>
+
+<body>
+    <nav class="navbar flex ">
+        <div class="hamburger">
+            <img src="/svgs/threesleepinglines.svg" alt="">
+        </div>
+        <div class="navicon1 ">
+            <img src="/svgs/logo.svg" alt="">
+        </div>
+        <div class="s flex">
+            <div class="navicon2 bg-color">
+                <button class="home"><img src="/svgs/home.svg" alt=""></button>
+            </div>
+            <div class="searchbar flex items-center bg-color">
+                <div class="navicon3"><img src="/svgs/search.svg" alt=""></div>
+                <textarea class="bg-color" name=searchbar id="sb" placeholder="What do you want to play?"></textarea>
+                <div class="navicon4">
+                    <img src="/svgs/icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="navright flex">
+            <!-- <div class="explore bold fontsize1">Explore Premium</div> -->
+            <div class="premium flex justify-center items-center bold ">
+                <a href="" class="color1">Premium</a>
+            </div>
+            <div class="support flex justify-center items-center bold ">
+                <a href="" class="color1">Support</a>
+            </div>
+            <div class="download flex justify-center items-center bold ">
+                <a href="" class="color1">Download</a>
+            </div>
+            <div class="pipe flex items-center">|</div>
+            <div class="installsection flex justify-center items-center cgap">
+                <img src="/svgs/install.svg" alt="">
+                <div class="install">
+                    <a href="" class="color1 bold fontsize1">Install App</a>
+                </div>
+            </div>
+            <!-- <div class="bell flex items-center">
+                <img src="bell.svg" alt="">
+            </div> -->
+            <div class="signup  flex justify-center items-center ">
+                <a href="" class="color1 bold fontsize1">Signup</a>
+            </div>
+        </div>
+        <div class="login flex items-center justify-center bold">
+            <button class="login">Log in</button>
+        </div>
+    </nav>
+    <div class="container flex ">
+        <div class="close">
+            <img src="close.svg" alt="">
+        </div>
+        <div class="left  bg-color height">
+            <div class="urlib flex items-center ">
+                <img src="/svgs/lib.svg" alt="">
+                <div class="gap flex items-center">
+                    <div class="text">Your Library</div>
+                    <div class="plus">
+                        <img src="/svgs/plus.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="box bg-color2 fontsize1">
+                <div class="title bold margin1">Create your first playlist</div>
+                <div class="content margin1">It's easy we'll help you</div>
+                <button class="btn">Create Playlist</button>
+            </div>
+            <div class="box bg-color2 fontsize1">
+                <div class="title bold margin1">Let's find some podcasts to follow</div>
+                <div class="content margin1">We'll keep you updated on new episodes</div>
+                <button class="btn">Browse podcasts</button>
+            </div> -->
+            <div class="playlists fontsize1 ">Playlists</div>
+            <div class="searchrecent flex items-center">
+                <div class="searchicon">
+                    <img src="/svgs/search.svg" alt="">
+                </div>
+                <div class="recentadd flex items-center color1 fontsize1 ">Recently Added
+                    <div class="icon2">
+                        <img src="/svgs/threesleepinglines.svg" width="15px" height="15px" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text1 fontsize1"><span class="s1 fontsize1 bold">My Playlist</span> <span class="s2 ">Playlist.Joel Y</span></div> -->
+            <!-- <div class="playandtext flex">
+                    <div class="icon3 ">
+                        <img src="music.svg" alt="">
+                    </div>
+                    <div class="text1 fontsize1"><span class="s1 fontsize1 bold">My Playlist</span> <span class="s2 ">Playlist.Joel Y</span></div>
+                </div>
+                <div class="playandtext flex">
+                    <div class="icon3 ">
+                        <img src="music.svg" alt="">
+                    </div>
+                    <div class="text1 fontsize1"><span class="s1 fontsize1 bold">My Playlist</span> <span class="s2 ">Playlist.Joel Y</span></div>
+                </div>
+                <div class="playandtext flex">
+                    <div class="icon3 ">
+                        <img src="music.svg" alt="">
+                    </div>
+                    <div class="text1 fontsize1"><span class="s1 fontsize1 bold">My Playlist</span> <span class="s2 ">Playlist.Joel Y</span></div>
+                </div>
+                <div class="playandtext flex">
+                    <div class="icon3 ">
+                        <img src="music.svg" alt="">
+                    </div>
+                    <div class="text1 fontsize1"><span class="s1 fontsize1 bold">My Playlist</span> <span class="s2 ">Playlist.Joel Y</span></div>
+                </div> -->
+            <div class="songlist">
+                <ul>
+                </ul>
+            </div>
+            <footer>
+                <div class="links">
+                    <ul class="flex color1">
+                        <li><a href="">Legal </a> </li>
+                        <li><a href="">Safety & Privacy center</a></li>
+                        <li><a href="">Privacy Policy </a> </li>
+                        <li><a href="">Cookies </a> </li>
+                        <li><a href="">About Ads </a> </li>
+                        <li><a href="">Accessibility </a> </li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <button class="color bg-color">English</button>
+                </div>
+            </footer>
+        </div>
+        <div class="right  bg-color height">
+            <div class="h2">
+                <h2><a href="" class="color">Trending Songs</a></h2>
+            </div>
+            <div class="cardcntr flex wrap justify-center">
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+                <div class="card flex">
+                    <img src="1.jpg" alt="">
+                    <a href="" alt="" class="color">2 Khatole <a>
+                            <div class="artists color1"><a href="">Masoom Sharma<a></div>
+                </div>
+            </div>
+            <div class="popular_artists">
+                <div class="h2">
+                    <h2><a href="" class="color">Popular artists</a></h2>
+                </div>
+            </div>
+            <div class="artistscntr flex justify-center">
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                    </div>
+                    <div class="artistname">Pritam</div>
+                    <div class="artist color1">Artist</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="playbar flex justify-center items-center cgap ">
+        </div>
+        <div class="seekbar">
+            <div class="circle">
+                <img src="/svgs/circle.svg" alt="">
+            </div>
+        </div>
+    <div class="abovebar">
+        <div class="songinfo"></div>
+        <div class="songbuttons items-center">
+            <img id="previous" src="/svgs/prev.svg" alt="">
+            <img id ="play" src="/svgs/play2.svg" alt="">
+            <img id="next" src="/svgs/next.svg" alt="">
+        </div>
+        <div class="timevol">
+            <div class="songtime"></div>
+            <div class="volume flex items-center">
+                <img src="svgs/volume.svg" width="25    " alt="">
+                <div class="range">
+                    <input type="range" name="volume" id="">
+                </div>
+            </div>
+            </div>
+        </div                           >
+        <script src="script.js"></script>
+</body>
+
+</html>

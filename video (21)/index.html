@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specifity</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .cpurple{
+            color: purple;
+        }
+        .cred{
+           color: red;
+        }
+        [data-x=a]{
+            color: maroon;
+        }
+         h1.yellow{
+            color: yellow;
+        }
+        a.harryclass.rohan-class[href]:hover{
+            color: blueviolet;
+        }
+        
+    </style> 
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS specifity</h1>
+    </div>
+</body>
+</html>
